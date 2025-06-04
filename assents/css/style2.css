@@ -1,0 +1,52 @@
+@import url(https://fonts.googleapis.com/css2?family=FAMILY_NAME);
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    background: lightcoral;
+}
+div{
+    margin-bottom: 30px;
+}
+.exemplo{
+    width: 300px;
+    height: 300px;
+    /*background-image: url(../img/praia.jpg);*/
+    background-size: 100% 100%;
+    /*background-repeat: no-repeat;*/
+    border: 15px dashed palegreen;
+    padding: 30px;
+    color: white;
+    font-size: 100px;
+    font-weight: 900;
+    background:
+    radial-gradient(circle at 50% 59%, #D2CAAB 3%, #364E27 4%, #364E27 11%, rgba(54,78,39,0) 12%, rgba(54,78,39,0)) 50px 0,
+    radial-gradient(circle at 50% 41%, #364E27 3%, #D2CAAB 4%, #D2CAAB 11%, rgba(210,202,171,0) 12%, rgba(210,202,171,0)) 50px 0,
+    radial-gradient(circle at 50% 59%, #D2CAAB 3%, #364E27 4%, #364E27 11%, rgba(54,78,39,0) 12%, rgba(54,78,39,0)) 0 50px,
+    radial-gradient(circle at 50% 41%, #364E27 3%, #D2CAAB 4%, #D2CAAB 11%, rgba(210,202,171,0) 12%, rgba(210,202,171,0)) 0 50px,
+    radial-gradient(circle at 100% 50%, #D2CAAB 16%, rgba(210,202,171,0) 17%),
+    radial-gradient(circle at 0% 50%, #364E27 16%, rgba(54,78,39,0) 17%),
+    radial-gradient(circle at 100% 50%, #D2CAAB 16%, rgba(210,202,171,0) 17%) 50px 50px,
+    radial-gradient(circle at 0% 50%, #364E27 16%, rgba(54,78,39,0) 17%) 50px 50px;
+    background-color:#63773F;
+    background-size:100px 100px;
+}
+
+#border-box{
+    /*background-origin: border-box;*/
+    background-clip: border-box;
+}
+#padding-box{
+    /*background-origin: padding-box;*/
+    background-clip: padding-box;
+}
+
+#content-box{
+    /*background-origin: content-box;*/
+    background-clip: content-box;
+}
+#text{
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+}
