@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha de CSS</title>
+</head> 
+<style>
+    .exemplo{
+        width: 200px;
+        color: black;
+        background-color: chartreuse;
+    }
+    p{
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    #exemplo-01{
+        text-overflow: clip;
+    }
+    #exemplo-02{
+        text-overflow: ellipsis;
+    }
+    #exemplo-03{
+        text-overflow: '>>'; /*Você pode usar uma string personalizada como ">>" ou "Leia mais". (Pouco suportado)*/
+    }
+
+</style>
+<body>
+    <h1>Propriedades<code>text-overflow</code></h1>
+
+    <p>
+        A propriedade text-overflow no CSS é usada para indicar
+        como o conteúdo de texto deve ser exibido quando ele ultrapassa o tamanho do contêiner.
+        Ela é normalmente usada em conjunto com overflow e white-space para criar efeitos como
+        corte de texto com reticências.
+    </p>
+
+    <i>Exemplo</i>
+
+    <code>text-overflow: clip</code>
+    <p id="exemplo-01" class="exemplo">
+        Chega de saudade
+        A realidade é que sem ela não há pz
+    </p>
+    
+    <code>text-overflow: ellipsis</code>
+    <p id="exemplo-02" class="exemplo">
+        Chega de saudade
+        A realidade é que sem ela não há pz
+    </p>
+
+    <code>text-overflow: string</code>
+    <p id="exemplo-03" class="exemplo">
+        Chega de saudade
+        A realidade é que sem ela não há pz
+    </p>
+</body>
+</html> 
